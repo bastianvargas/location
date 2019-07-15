@@ -1,2 +1,2 @@
 # location
-test app location html5
+single page location api HTML5
