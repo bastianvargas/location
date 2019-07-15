@@ -1,0 +1,39 @@
+body{
+	background: url("https://c1.staticflickr.com/3/2102/2156473785_97dc9336e3.jpg");
+	background-size: 100%;
+}
+div.contain{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	margin-top: 5%;
+	padding: 1%;
+  text-align: center;
+	border-radius: .3em;
+	background-color: rgba(255,255,255,.6);
+	box-shadow: 0px 0px 100px rgba(255,255,255,.6)
+}
+
+#loadButton {
+  box-shadow: 0 0 18px rgba(#000, 0.5);
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  box-shadow: 0 0 15px 0 #a28686;
+  border: 0;
+  cursor: pointer;
+  color: #black;
+  background-color: white;
+  transition: all 100ms ease-in-out;
+  border: 2px solid transparent;
+  &:hover {
+    background-color: darken(teal, 3%);
+  }
+  &:focus {
+    outline: 0;
+    border: 2px solid #fff;
+  }
+  &:active {
+    transform: scale(0.96);
+  }
+}

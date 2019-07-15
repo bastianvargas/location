@@ -5,24 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <p>Obtener Ubicacion</p>
-  <button onclick="getLocation()">Obtener</button>
 
-  <p id="demo"></p>
-  <iframe
-    id="ifra"
-    width="300"
-    height="170"
-    frameborder="0"
-    scrolling="no"
-    marginheight="0"
-    marginwidth="0"
-    src="https://maps.google.com/maps?q=&hl=es;z=14&amp;output=embed"
-    style="display:none;"
-   >
- </iframe>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,places"></script>
+
+  <div class="contain">
+    <p>Obtener Ubicacion</p>
+
+    <button id="loadButton"  onclick="getLocation()" role="button">OBTENER</button>
+
+    <p id="demo"></p>
+    <iframe
+      id="ifra"
+      width="300"
+      height="170"
+      frameborder="0"
+      scrolling="no"
+      marginheight="0"
+      marginwidth="0"
+      src="https://maps.google.com/maps?q=&hl=es;z=14&amp;output=embed"
+      style="display:none;box-shadow: 0 0 18px rgba(#000, 0.5);border-radius:10px;"
+     >
+   </iframe>
+  </div>
+
 
 
 
